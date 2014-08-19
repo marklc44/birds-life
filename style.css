@@ -1,0 +1,404 @@
+/* colors */
+/* main character*/
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 700px;
+  background: #9accee;
+  perspective: 1000; }
+  .bg h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #d35400; }
+
+.bird {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  z-index: 999;
+  transition: all 1s ease; }
+
+.bob {
+  -webkit-animation: bob 1s infinite; }
+
+.body {
+  width: 180px;
+  height: 120px;
+  border-radius: 100%;
+  background: #674172;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: -moz-linear-gradient(top, #674172 0%, #674172 44%, #39223d 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #674172), color-stop(44%, #674172), color-stop(100%, #39223d));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #674172 0%, #674172 44%, #39223d 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #674172 0%, #674172 44%, #39223d 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #674172 0%, #674172 44%, #39223d 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #674172 0%, #674172 44%, #39223d 100%);
+  /* W3C */ }
+
+.head {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  background: #583862;
+  height: 80px;
+  width: 60px;
+  border-radius: 100%;
+  transform: rotate(10deg); }
+  .head .eye {
+    height: 20px;
+    width: 20px;
+    background: #22313f;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: .25s ease-out; }
+    .head .eye:after {
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      height: 10px;
+      width: 10px;
+      background: #587ea2;
+      border-radius: 50%;
+      opacity: .5; }
+    .head .eye.right {
+      opacity: 0;
+      right: 0; }
+  .head .beak {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 30px solid #e67e22;
+    position: absolute;
+    right: -25px;
+    top: 20px;
+    transition: all .25s ease-out; }
+    .head .beak:after {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: #e67e22;
+      position: absolute;
+      bottom: 0;
+      left: -30px; }
+    .head .beak.open:after {
+      transform-origin: 0 0;
+      transform: translateY(8px) skewY(25deg); }
+  .head .chirp {
+    opacity: 0;
+    font-family: 'Luckiest Guy';
+    transition: all .15s linear;
+    position: absolute;
+    color: #22313f;
+    top: 35px;
+    right: -90px; }
+    .head .chirp:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      background: #22313f;
+      height: 2px;
+      width: 80%;
+      transform: rotate(-5deg); }
+    .head .chirp:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 6px;
+      background: #22313f;
+      height: 2px;
+      width: 80%;
+      transform: rotate(5deg); }
+
+.opaque {
+  opacity: 1; }
+
+.head.turned .eye.left {
+  transform: translateX(-25px); }
+.head.turned .eye.right {
+  opacity: 1;
+  tranform: translate3d(10px, 0, 0); }
+.head.turned .beak {
+  right: 25px;
+  transform: translate3d(8px, 15px, 0) skewX(-10deg) skewY(-10deg); }
+
+.wing {
+  width: 75px;
+  height: 100px;
+  background: #3b2541;
+  border-radius: 10% 10% 80% 20%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transition: all .5s ease;
+  transform-origin: 0 0;
+  -webkit-animation: flap 1s infinite; }
+
+.tail {
+  width: 100px;
+  height: 50px;
+  transform: skew(5deg, 30deg);
+  background: #674172;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  border-radius: 0 0 0 40%;
+  transition: all .5s ease; }
+  .tail.feather1 {
+    transform: skew(5deg, 50deg);
+    background: #4a2e52; }
+  .tail.feather2 {
+    transform: skew(5deg, 42deg);
+    background: #583862; }
+
+.legend {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  width: 200px; }
+  .legend button {
+    border: 2px solid #d35400;
+    background: none;
+    color: #d35400;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    padding: .5em;
+    outline: none;
+    width: 160px;
+    transition: all .10s ease-in; }
+    .legend button:hover {
+      background: #d35400;
+      color: #9accee; }
+
+.fly {
+  position: absolute;
+  right: -20px;
+  top: 500px;
+  width: 20px;
+  height: 10px;
+  background: #22313f;
+  border-radius: 100%;
+  transition: all 1s ease;
+  -webkit-animation: flyUp 2.5s 1 linear; }
+  .fly .fly-wing {
+    width: 10px;
+    height: 10px;
+    background: #22313f;
+    border-radius: 100%%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transition: all .5s ease;
+    transform-origin: 0 0;
+    -webkit-animation: flyFlap .05s infinite; }
+
+.nom {
+  position: absolute;
+  opacity: 0;
+  right: -50px;
+  top: 0;
+  color: #22313f;
+  font-family: 'Luckiest Guy', sans-serif;
+  -webkit-animation: nom 2s 1 ease-out; }
+  .nom span {
+    display: block; }
+    .nom span.one {
+      transform: rotate(-6deg); }
+    .nom span.two {
+      transform: rotate(6deg); }
+
+.poop {
+  position: absolute;
+  top: 310px;
+  left: 39%;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: white;
+  transform: rotate(2deg);
+  -webkit-animation: poop 2s 1 ease-in; }
+  .poop:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: white; }
+
+/* Terrain */
+.cloud {
+  width: 200px;
+  transition: all 6s linear;
+  position: absolute;
+  top: 20px;
+  right: -200px;
+  opacity: .8; }
+
+#cloud2 {
+  top: 100px; }
+
+#cloud3 {
+  top: 300px; }
+
+.plane {
+  position: absolute;
+  top: 300px;
+  right: -400px;
+  width: 350px;
+  transition: all 6s linear; }
+
+.ship {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  width: 150px;
+  height: 150px;
+  transition: all 6s linear; }
+
+.rock {
+  position: absolute;
+  top: 100px;
+  right: -100px;
+  width: 150px;
+  height: 150px;
+  transition: all 6s linear; }
+
+.saucer-spin {
+  -webkit-animation: saucer 1s infinite linear; }
+
+.up {
+  -webkit-animation: bankUp 2.5s 1 ease-out; }
+
+.down {
+  -webkit-animation: bankDown 2.5s 1 ease-out; }
+
+/* Animations */
+@-webkit-keyframes bob {
+  0% {
+    transform: translate3d(0, 0, 0); }
+
+  50% {
+    transform: translate3d(0, 5px, 0); }
+
+  100% {
+    transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes flap {
+  0% {
+    height: 100%; }
+
+  50% {
+    height: 30%;
+    transform: skewX(-45deg); }
+
+  100% {
+    height: 100%;
+    transform: skewX(0deg); } }
+@-webkit-keyframes flyFlap {
+  0% {
+    height: 100%; }
+
+  50% {
+    height: 30%;
+    transform: skewX(45deg); }
+
+  100% {
+    height: 100%;
+    transform: skewX(0deg); } }
+@-webkit-keyframes poop {
+  0% {
+    transform: translate3d(0, 0, 0); }
+
+  100% {
+    transform: translate3d(-400px, 1000px, 0); } }
+@-webkit-keyframes flyUp {
+  0% {
+    transform: translate3d(0, 0, 0); }
+
+  20% {
+    transform: translate3d(-15px, -100px, 0); }
+
+  40% {
+    transform: translate3d(-103px, -140px, 0); }
+
+  50% {
+    transform: translate3d(-80px, -110px, 0); }
+
+  60% {
+    transform: translate3d(-150px, -80px, 0); }
+
+  70% {
+    transform: translate3d(-170px, -130px, 0); }
+
+  80% {
+    transform: translate3d(-300px, -120px, 0); }
+
+  90% {
+    transform: translate3d(-400px, -180px, 0); }
+
+  100% {
+    transform: translate3d(-650px, -302px, 0); } }
+@-webkit-keyframes nom {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(3px, 10px, 0); } }
+@-webkit-keyframes bankUp {
+  0% {
+    transform: translate3d(0, 0, 0); }
+
+  40% {
+    transform: rotate(-8deg) translate3d(0, -60px, 0); }
+
+  60% {
+    transform: rotate(8deg) translate3d(0, -30px, 0); }
+
+  100% {
+    transform: rotate(0) translate3d(0, 0, 0); } }
+@-webkit-keyframes bankDown {
+  0% {
+    transform: translate3d(0, 0, 0); }
+
+  40% {
+    transform: rotate(8deg) translate3d(0, 60px, 0); }
+
+  60% {
+    transform: rotate(-8deg) translate3d(0, 30px, 0); }
+
+  100% {
+    transform: rotate(0) translate3d(0, 0, 0); } }
+@-webkit-keyframes saucer {
+  0% {
+    transform: rotateZ(-360deg);
+    transform-style: preserve-3d; }
+
+  100% {
+    transform: rotateZ(360deg);
+    transform-style: preserve-3d; } }

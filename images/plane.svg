@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 201.4 106" enable-background="new 0 0 201.4 106" xml:space="preserve">
+<g>
+	<polygon fill="#FFFFFF" stroke="#808080" stroke-miterlimit="10" points="55.1,55.5 136.6,5.5 163.4,5.5 103.3,55.5 	"/>
+	<path fill="#FFFFFF" stroke="#808080" stroke-miterlimit="10" d="M200.9,48.5c0-9.1-12.6-16.4-28.3-16.4c-1.2,0-2.3,0.3-3.5,0.3
+		H32.8c-1.2,0-2.3-0.3-3.5-0.3C13.7,32.2,1,39.7,1,48.8C1,58,13.7,65.5,29.3,65.5c0,0,0,0,0,0l0,0h143.2v-0.4
+		C188.5,65.1,200.9,57.7,200.9,48.5z"/>
+	<g>
+		<ellipse fill="#CCCCCC" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" cx="46.1" cy="43.9" rx="3.7" ry="4.9"/>
+		<ellipse fill="#CCCCCC" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" cx="59.5" cy="43.9" rx="3.7" ry="4.9"/>
+		<ellipse fill="#CCCCCC" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" cx="72.9" cy="43.9" rx="3.7" ry="4.9"/>
+		<ellipse fill="#CCCCCC" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" cx="86.3" cy="43.9" rx="3.7" ry="4.9"/>
+		<ellipse fill="#CCCCCC" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" cx="99.7" cy="43.9" rx="3.7" ry="4.9"/>
+		<ellipse fill="#CCCCCC" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" cx="113" cy="43.9" rx="3.7" ry="4.9"/>
+	</g>
+	<g>
+		<defs>
+			<path id="SVGID_1_" d="M200.9,48.5c0-9.1-12.6-16.4-28.3-16.4c-1.2,0-2.3,0.3-3.5,0.3H32.8c-1.2,0-2.3-0.3-3.5-0.3
+				C13.7,32.2,1,39.7,1,48.8C1,58,13.7,65.5,29.3,65.5c0,0,0,0,0,0l0,0h143.2v-0.4C188.5,65.1,200.9,57.7,200.9,48.5z"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		
+			<rect x="0.5" y="55.5" clip-path="url(#SVGID_2_)" fill="#ED1C24" stroke="#808080" stroke-miterlimit="10" width="200" height="6"/>
+		<use xlink:href="#SVGID_1_"  overflow="visible" fill="none" stroke="#808080" stroke-miterlimit="10"/>
+	</g>
+	<polygon fill="#FFFFFF" stroke="#808080" stroke-miterlimit="10" points="82.3,55.5 163.8,105.5 190.6,105.5 130.5,55.5 	"/>
+	<polygon fill="#FFFFFF" stroke="#808080" stroke-miterlimit="10" points="158.7,51.5 187.4,69.5 196.9,69.5 175.7,51.5 	"/>
+	<polygon fill="#FFFFFF" stroke="#808080" stroke-miterlimit="10" points="139.4,36.5 170.8,0.5 194.6,0.5 178.6,36.5 	"/>
+	<path fill="#B3B3B3" stroke="#808080" stroke-width="0.5031" stroke-miterlimit="10" d="M32,41.4c0,4.7-0.7,8.5-9.6,8.5
+		S6.3,46.1,6.3,41.4s7.2-8.5,16.1-8.5c2.2,0,3.9-0.3,5.3,0.2C31.6,34.3,32,37.8,32,41.4z"/>
+</g>
+</svg>
