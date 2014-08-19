@@ -190,6 +190,17 @@ body {
     .legend button:hover {
       background: #d35400;
       color: #9accee; }
+  .legend span {
+    font-size: .65em;
+    font-family: 'Oswald', sans-serif;
+    float: left;
+    margin-right: 1em;
+    color: #d35400; }
+    .legend span:first-of-type {
+      margin-left: 20px; }
+    .legend span:last-of-type {
+      float: right;
+      margin-right: 25px; }
 
 .fly {
   position: absolute;
