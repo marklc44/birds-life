@@ -138,7 +138,7 @@ body {
   transform: translateX(-25px); }
 .head.turned .eye.right {
   opacity: 1;
-  tranform: translate3d(10px, 0, 0); }
+  transform: translate3d(10px, 0, 0); }
 .head.turned .beak {
   right: 25px;
   transform: translate3d(8px, 15px, 0) skewX(-10deg) skewY(-10deg); }
